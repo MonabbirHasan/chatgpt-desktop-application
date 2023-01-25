@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,500;1,200;1,300;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../bootstrap-4.3.1-dist/css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="../bootstrap-4.3.1-dist/css/bootstrap.min.css"
+    />
+    <title>SignUp Now</title>
+  </head>
+  <body>
+    <style>
+      .form-box {
+        display: inline-block;
+        box-shadow: -2px -2px 5px #eee, 2px 2px 5px #eee;
+        background-color: #fff;
+        padding: 20px;
+      }
+      .form-box h1 {
+        padding: 10px 0;
+      }
+      .wrapper {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        min-height: 100vh;
+      }
+      .form-box input {
+        text-align: left;
+      }
+      .form-box label {
+        text-transform: capitalize;
+        color: #000;
+      }
+      #img {
+        padding: 10px 0;
+        filter: drop-shadow(5px 5px 5px #eee);
+        border-radius: 10px;
+      }
+    </style>
+
+    <div class="singup">
+      <div class="container">
+        <div class="wrapper">
+          <form method="post" class="form-box" enctype="multipart/form-data">
+            <h1>SignUp now</h1>
+            <div class="form-group">
+              <label for="username">username</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                aria-describedby="emailHelpId"
+                placeholder="Please Enter Your UserName"
+              />
+            </div>
+            <div class="form-group">
+              <label for="Email">Email</label>
+              <input
+                type="email"
+                required
+                class="form-control"
+                id="email"
+                aria-describedby="emailHelpId"
+                placeholder="Please Enter Your Email"
+              />
+            </div>
+            <div class="form-group">
+              <label for="password">password</label>
+              <input
+                type="password"
+                required
+                class="form-control"
+                id="password"
+                aria-describedby="emailHelpId"
+                placeholder="Please Enter Your password"
+              />
+            </div>
+            <div class="form-group">
+              <label for="Image">Image</label>
+              <input
+                type="file"
+                required
+                class="form-control"
+                id="image"
+                accept=".jpg, .jpeg, .png"
+                aria-describedby="emailHelpId"
+              />
+              <img accept=".jpg, .jpeg, .png" width="100" id="img" alt="" />
+            </div>
+            <button class="btn btn-success" id="btn" type="button">
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script>
+      function device_false() {
+        window.oncontextmenu = () => {
+          return false
+        }
+        window.onkeypress = (e) => {
+          if (e.keyCode === 123) {
+            return false
+          }
+        }
+      }
+      device_false()
+    </script>
+    <script src="../js/SignUp.js"></script>
+    <!-- custom js link here -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script src="../bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+    <script src="../bootstrap-4.3.1-dist/js/bootstrap.js"></script>
+    <script src="../bootstrap-4.3.1-dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>

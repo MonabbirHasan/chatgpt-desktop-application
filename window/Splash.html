@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,500;1,200;1,300;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../bootstrap-4.3.1-dist/css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="../bootstrap-4.3.1-dist/css/bootstrap.min.css"
+    />
+    <title>WELCOME</title>
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+      }
+      .banner {
+        background-image: url('../assets/ai_banner2.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 100vh;
+        filter: hue-rotate(48deg) drop-shadow(20px 40px 60px #2196f3);
+        overflow: hidden;
+        background-attachment: fixed;
+        text-align: center;
+        /* animation: bot 4s linear infinite; */
+        transition: 0.5s ease-in-out;
+        width: 100%;
+      }
+      @keyframes bot {
+        0% {
+          filter: hue-rotate(0);
+        }
+        100% {
+          filter: hue-rotate(360deg);
+        }
+      }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="banner"></div>
+    <!-- custom js link here -->
+    <script>
+      function device_false() {
+        window.oncontextmenu = () => {
+          return false
+        }
+        window.onkeypress = (e) => {
+          if (e.keyCode === 123) {
+            return false
+          }
+        }
+      }
+      device_false()
+    </script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script src="../bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+    <script src="../bootstrap-4.3.1-dist/js/bootstrap.js"></script>
+    <script src="../bootstrap-4.3.1-dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>

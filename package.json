@@ -1,0 +1,38 @@
+{
+  "name": "chatgpt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "watch": "nodemon --exec electron .",
+    "build-installer": "electron-builder"
+  },
+"build":{
+  "appId":"prayer-app",
+  "win":{
+    "target":["nsis"],
+    "icon":"./assets/ai.ico",
+    "requestedExecutionLevel":"requireAdministrator"
+  },
+  "nsis":{
+    "installerIcon":"./assets/ai.ico",
+    "uninstallerIcon":"./assets/ai.ico",
+    "uninstallDisplayName":"Prayer For You",
+    "license":"license.txt",
+    "oneClick":false,
+    "allowToChangeInstallationDirectory":true
+  }
+ },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^22.0.0",
+    "electron-builder": "^23.6.0"
+  },
+  "dependencies": {
+    "axios": "^1.2.2",
+    "nodemon": "^2.0.20"
+  }
+}
